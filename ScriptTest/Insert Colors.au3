@@ -1,22 +1,19 @@
 #cs ----------------------------------------------------------------------------
-MsgBox(262144, 'Debug line ~' & @ScriptLineNumber, 'Selection:' & @CRLF & '#cs' & @CRLF & @CRLF & 'Return:' & @CRLF & #cs) ;### Debug MSGBOX
-
  AutoIt Version: 3.3.14.2
  Author:         Jedidiah May
 
  Script Function:
-	Template AutoIt script.
+	Insert Colors after phases are created
 
 #ce ----------------------------------------------------------------------------
-
-; Script Start - Add your code below here
 
 #include <MsgBoxConstants.au3>
 #include <GUIListBox.au3>
 #include <GUIConstantsEx.au3>
 #include <GUIListView.au3>
 #include <Date.au3>
-
+#include "\\bgnbgcltfile01\NBG Business Tools\Testing Scripts\ScriptLibraries\NewJobLib.au3"
+#include "\\bgnbgcltfile01\NBG Business Tools\Testing Scripts\ScriptLibraries\BookJobLib.au3"
 
 Opt("WinTitleMatchMode",2)
 If Not WinExists("Order Entry") Then
